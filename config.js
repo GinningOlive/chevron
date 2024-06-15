@@ -113,13 +113,10 @@ window.CONFIG = {
       url: 'https://stackoverflow.com',
       normalisedURL: 'stackoverflow.com',
       triggers: [
-        's',
-        'st',
-        'so',
         'stack',
         'stackoverflow'
       ],
-      key: 'KeyS',
+      # key: 'KeyS',
       commands: {
         search: {
           template: '{@}/search?q={$}'
