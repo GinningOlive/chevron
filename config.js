@@ -29,57 +29,6 @@ window.CONFIG = {
       pinned: true
     },
     {
-      category: 'Communication',
-      name: 'Telegram',
-      icon: 'telegram',
-      url: 'http://t.me',
-      normalisedURL: 't.me',
-      triggers: [
-        'm',
-        'tm',
-        'tg',
-        'teleg',
-        'telega',
-        'telegram'
-      ],
-      key: 'KeyM',
-      commands: {
-        go: {
-          template: '{@}/{$}'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'radial',
-        colors: ['#29aaed', '#25a4e2'],
-        stops: [40, 100]
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Communication',
-      name: 'WhatsApp',
-      icon: 'whatsApp',
-      url: 'https://web.whatsapp.com',
-      normalisedURL: 'whatsapp.com',
-      triggers: [
-        'w',
-        'wa',
-        'wapp',
-        'wahtsapp',
-      ],
-      key: 'KeyW',
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        angle: 45,
-        colors: ['#26d347', '#58f879']
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
       category: 'Social',
       name: 'Reddit',
       triggers: [
@@ -167,7 +116,7 @@ window.CONFIG = {
         stops: [0, 100]
       },
       textColor: '#212121',
-      pinned: true
+      pinned: false
     },
     {
       category: 'Programming',
@@ -188,7 +137,7 @@ window.CONFIG = {
         color: '#70a597',
       },
       textColor: '#f7f7f7',
-      pinned: true
+      pinned: false
     },
     {
       category: 'Other',
@@ -243,7 +192,7 @@ window.CONFIG = {
         stops: [0, 5, 45, 60, 90]
       },
       textColor: '#e8e8e8',
-      pinned: true
+      pinned: false
     },
     {
       category: 'Music',
@@ -369,7 +318,7 @@ window.CONFIG = {
         color: '#1c99e6'
       },
       textColor: '#e8e8e8',
-      pinned: true
+      pinned: false
     },
     {
       category: 'Work',
@@ -395,7 +344,7 @@ window.CONFIG = {
         color: '#0077b7'
       },
       textColor: '#fff',
-      pinned: true
+      pinned: false
     },
     {
       category: 'Communication',
@@ -495,6 +444,57 @@ window.CONFIG = {
       },
       textColor: '#000',
       pinned: true
+    },
+        {
+      category: 'Communication',
+      name: 'Telegram',
+      icon: 'telegram',
+      url: 'http://t.me',
+      normalisedURL: 't.me',
+      triggers: [
+        'm',
+        'tm',
+        'tg',
+        'teleg',
+        'telega',
+        'telegram'
+      ],
+      key: 'KeyM',
+      commands: {
+        go: {
+          template: '{@}/{$}'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'radial',
+        colors: ['#29aaed', '#25a4e2'],
+        stops: [40, 100]
+      },
+      textColor: '#fff',
+      pinned: false
+    },
+    {
+      category: 'Communication',
+      name: 'WhatsApp',
+      icon: 'whatsApp',
+      url: 'https://web.whatsapp.com',
+      normalisedURL: 'whatsapp.com',
+      triggers: [
+        'w',
+        'wa',
+        'wapp',
+        'wahtsapp',
+      ],
+      key: 'KeyW',
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        angle: 45,
+        colors: ['#26d347', '#58f879']
+      },
+      textColor: '#fff',
+      pinned: false
     },
     {
       category: 'Work',
