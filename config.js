@@ -116,7 +116,7 @@ window.CONFIG = {
         'stack',
         'stackoverflow'
       ],
-      # key: 'KeyS',
+      // key: 'KeyS',
       commands: {
         search: {
           template: '{@}/search?q={$}'
