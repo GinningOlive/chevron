@@ -28,6 +28,28 @@ window.CONFIG = {
       textColor: '#212121',
       pinned: true
     },
+        {
+      category: 'Education',
+      name: 'Jisho',
+      triggers: [
+        'j',
+        '',
+        '',
+        'jisho',
+      ],
+      icon: 'amazon',
+      key: 'KeyJ',
+      url: 'https://www.jisho.org/',
+      normalisedURL: 'jisho.org',
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
     {
       category: 'Social',
       name: 'Reddit',
