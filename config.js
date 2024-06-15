@@ -28,17 +28,27 @@ window.CONFIG = {
       textColor: '#212121',
       pinned: true
     },
-        {
+    {
       category: 'Education',
       name: 'Jisho',
       triggers: [
         'j',
         'jisho',
       ],
-      icon: 'amazon',
+      icon: 'jisho',
       key: 'KeyJ',
       url: 'https://www.jisho.org/',
       normalisedURL: 'jisho.org',
+      commands: {
+        go: {
+          template: '{@}/search/{$}%20%23kanji',
+          description: 'go to jisho page'
+        },
+        search: {
+          template: '{@}/search/{$}',
+          description: 'search by word or sentence'
+        }
+      },
       bgColor: {
         type: 'gradient',
         gradientType: 'linear',
@@ -157,6 +167,193 @@ window.CONFIG = {
       pinned: false
     },
     {
+      category: 'Education',
+      name: 'DeepL',
+      triggers: [
+        'd',
+        'deepl'
+      ],
+      icon: 'deepl',
+      key: 'KeyD',
+      url: 'https://www.deepl.com/en/translator',
+      normalisedURL: 'deepl.com',
+      commands: {
+        go: {
+          template: '{@}#en/ja/{$}',
+          description: 'translate to japanese'
+        },
+        search: {
+          template: '{@}#ja/en/{$}',
+          description: 'translate to english'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
+      category: 'Education',
+      name: 'Bulbapedia',
+      triggers: [
+        'b',
+        'bulb',
+        'bulbapedia'
+      ],
+      icon: 'bulbapedia',
+      key: 'KeyB',
+      url: 'https://bulbapedia.bulbagarden.net/wiki',
+      normalisedURL: 'bulbagarden.net',
+      commands: {
+        go: {
+          template: '{@}/{$}',
+          description: 'search bulbapedia'
+        },
+        search: {
+          template: '{@}/{$}',
+          description: 'search bulbapedia'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
+      category: 'Other',
+      name: 'Nix Packages',
+      triggers: [
+        'n',
+        'nix'
+      ],
+      icon: 'nix',
+      key: 'KeyN',
+      url: 'https://search.nixos.org/packages?channel=24.05&from=0&size=50&sort=relevance&type=packages&query=',
+      normalisedURL: 'nixos.org',
+      commands: {
+        go: {
+          template: '{@}{$}',
+          description: 'search nix packages'
+        },
+        search: {
+          template: '{@}{$}',
+          description: 'search nix packages'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
+      category: 'Other',
+      name: 'ProtonDB',
+      triggers: [
+        'p',
+        'pt',
+        'proton',
+        'protondb'
+      ],
+      icon: 'protondb',
+      key: 'KeyP',
+      url: 'https://www.protondb.com',
+      normalisedURL: 'protondb.com',
+      commands: {
+        go: {
+          template: '{@}/app/{$}',
+          description: 'enter gameid'
+        },
+        search: {
+          template: '{@}/search?q={$}',
+          description: 'search protondb'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
+      category: 'Other',
+      name: 'SteamDB',
+      triggers: [
+        's',
+        'st',
+        'steam',
+        'steamdb'
+      ],
+      icon: 'steamdb',
+      key: 'KeyS',
+      url: 'https://steamdb.info',
+      normalisedURL: 'steamdb.info',
+      commands: {
+        go: {
+          template: '{@}/app/{$}',
+          description: 'enter gameid'
+        },
+        search: {
+          template: '{@}/search/?a=all&q={$}',
+          description: 'search steamdb'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
+      category: 'Other',
+      name: 'Songsterr',
+      triggers: [
+        'g',
+        'song',
+        'guitar',
+        'songsterr'
+      ],
+      icon: 'songsterr',
+      key: 'KeyG',
+      url: 'https://www.songsterr.com',
+      normalisedURL: 'songsterr.com',
+      commands: {
+        go: {
+          template: '{@}/?pattern={$}',
+          description: 'search for a song to play'
+        },
+        search: {
+          template: '{@}/?pattern={$}',
+          description: 'search for a song to play'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
       category: 'Other',
       name: 'Translate',
       icon: 'translate',
@@ -244,9 +441,8 @@ window.CONFIG = {
       category: 'Social',
       name: 'Discord',
       icon: 'discord',
-      key: 'KeyD',
+      // key: 'KeyD',
       triggers: [
-        'd',
         'dis',
         'discord'
       ],
@@ -288,12 +484,12 @@ window.CONFIG = {
       category: 'Entertainment',
       name: 'Netflix',
       triggers: [
-        'n',
+        // 'n',
         'nf',
         'nfx',
         'netflix',
       ],
-      key: 'KeyN',
+      // key: 'KeyN',
       icon: 'netflix',
       url: 'https://media.netflix.com',
       normalisedURL: 'netflix.com',
@@ -584,7 +780,6 @@ window.CONFIG = {
       category: 'Search',
       name: 'Bing',
       triggers: [
-        'b',
         'bing',
       ],
       url: 'https://www.bing.com',
