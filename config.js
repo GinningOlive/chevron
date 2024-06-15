@@ -33,8 +33,6 @@ window.CONFIG = {
       name: 'Jisho',
       triggers: [
         'j',
-        '',
-        '',
         'jisho',
       ],
       icon: 'amazon',
