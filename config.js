@@ -355,6 +355,36 @@ window.CONFIG = {
     },
     {
       category: 'Other',
+      name: 'Searx',
+      triggers: [
+        'x',
+        'searx'
+      ],
+      icon: 'searx',
+      key: 'KeyX',
+      url: 'https://searx.neocities.org',
+      normalisedURL: 'https://searx.neocities.org/',
+      commands: {
+        go: {
+          template: '{@}/#q={$}&category_general=on',
+          description: 'search with searx neocities'
+        },
+        search: {
+          template: '{@}/#q={$}&category_general=on',
+          description: 'search with searx neocities'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
+      category: 'Other',
       name: 'Translate',
       icon: 'translate',
       url: 'https://translate.google.com',
