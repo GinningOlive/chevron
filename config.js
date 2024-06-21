@@ -361,7 +361,7 @@ window.CONFIG = {
         'searx'
       ],
       icon: 'searx',
-      key: 'KeyX',
+      // key: 'KeyX',
       url: 'https://searx.neocities.org',
       normalisedURL: 'https://searx.neocities.org/',
       commands: {
