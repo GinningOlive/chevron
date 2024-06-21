@@ -99,7 +99,7 @@ window.CONFIG = {
         'git',
         'github'
       ],
-      key: 'KeyG',
+      // key: 'KeyG',
       commands: {
         go: {
           template: '{@}/{$}',
