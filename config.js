@@ -97,6 +97,7 @@ window.CONFIG = {
       triggers: [
         'g',
         'git',
+	'gh',
         'github'
       ],
       // key: 'KeyG',
@@ -326,6 +327,7 @@ window.CONFIG = {
       name: 'Songsterr',
       triggers: [
         'g',
+	'sg',
         'song',
         'guitar',
         'songsterr'
@@ -372,6 +374,36 @@ window.CONFIG = {
         search: {
           template: '{@}/#q={$}&category_general=on',
           description: 'search with searx neocities'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#f29100', '#fff'],
+        stops: [0, 80]
+      },
+      textColor: '#000',
+      pinned: true
+    },
+    {
+      category: 'Other',
+      name: 'WynnCraft',
+      triggers: [
+        'w',
+        'wynncraft'
+      ],
+      icon: 'wynncraft',
+      key: 'KeyW',
+      url: 'https://map.wynncraft.com/',
+      normalisedURL: 'wynncraft.com',
+      commands: {
+        go: {
+          template: 'https://wynncraft.wiki.gg/wiki/{$}',
+          description: 'go to a wynncraft wiki page'
+        },
+        search: {
+          template: 'https://wynncraft.wiki.gg/index.php?search={$}&title=Special%3ASearch&fulltext=Search&ns0=1',
+          description: 'search for a wynncraft wiki page'
         }
       },
       bgColor: {
@@ -724,7 +756,6 @@ window.CONFIG = {
       url: 'https://web.whatsapp.com',
       normalisedURL: 'whatsapp.com',
       triggers: [
-        'w',
         'wa',
         'wapp',
         'wahtsapp',
