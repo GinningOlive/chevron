@@ -100,7 +100,7 @@ window.CONFIG = {
 	'gh',
         'github'
       ],
-      // key: 'KeyG',
+      key: 'KeyG',
       commands: {
         go: {
           template: '{@}/{$}',
@@ -237,7 +237,7 @@ window.CONFIG = {
       ],
       icon: 'nix',
       key: 'KeyN',
-      url: 'https://search.nixos.org/packages?channel=24.11&from=0&size=50&sort=relevance&type=packages&query=',
+      url: 'https://search.nixos.org/packages?channel=25.05&from=0&size=50&sort=relevance&type=packages&query=',
       normalisedURL: 'nixos.org',
       commands: {
         go: {
@@ -333,7 +333,7 @@ window.CONFIG = {
         'songsterr'
       ],
       icon: 'songsterr',
-      key: 'KeyG',
+      // key: 'KeyG',
       url: 'https://www.songsterr.com',
       normalisedURL: 'songsterr.com',
       commands: {
