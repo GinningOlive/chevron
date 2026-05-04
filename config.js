@@ -97,7 +97,7 @@ window.CONFIG = {
       triggers: [
         'g',
         'git',
-	'gh',
+	    'gh',
         'github'
       ],
       key: 'KeyG',
@@ -237,7 +237,7 @@ window.CONFIG = {
       ],
       icon: 'nix',
       key: 'KeyN',
-      url: 'https://search.nixos.org/packages?channel=25.05&from=0&size=50&sort=relevance&type=packages&query=',
+      url: 'https://search.nixos.org/packages?channel=25.11&from=0&size=50&sort=relevance&type=packages&query=',
       normalisedURL: 'nixos.org',
       commands: {
         go: {
